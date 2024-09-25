@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+:root {
+    --primary-color: #778DA9; 
+    --secondary-color: #E0E1DD;
+    --accent1-color: #415A77;
+    --accent2-color: #1B263B;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+
+    --nav-background-color: #415A77;
+    --nav-link-color: #E0E1DD;
+    --nav-hover-link-color: #778DA9;
+    --nav-hover-background-color: #1B263B;
+}
+
+header {
+    max-width: 960px;
+    background-color: var(--accent2-color);
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.active {
+    color: yellow;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1, h2, h3 {
+    padding: 10px;
+}
+
+main {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 10px;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    text-align: center;
+}
+
+section img {
+    float: right;
+    display: block;
+    margin: 5px;
+}
+
+h3 {
+    clear: right;
+    color: var(--accent2-color)
+}
+
+.card p {
+    text-align: left;
+    padding: 10px;
+    color: var(--accent2-color)
+}
+
+.card {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--accent2-color);
+}
+
+.card h2 {
+    background-color: #1B263B;
+    color: var(--secondary-color);
+}
+
+.card ul {
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+section {
+    text-align: center;
+}
+
+footer {
+    background-color: #1B263B;
+    color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
