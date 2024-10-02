@@ -4,25 +4,26 @@ const list = document.querySelector('submit');
 
 const li = document.createElement('li');
 
-const deleteButton = document.createElement('button');
-
 li.textContent = input.value;
 
 deleteButton.textContent = '❌';
 
-li.append(deleteButton);
+const deleteButton = document.createElement('button');
 
-list.append(li);
+button.addEventListener('click', function() { 
+    if (input.value.trim() !== '') {
+    list.append(li);
+    li.append(deleteButton);
 
-button.addEventListener('click', function () {
-    if (input.value.trim() !== '');
-});
-
-deleteButton.addEventListener('click', function () {
-    list.removeChild(li);
+    deleteButton.addEventListener('click', function () {
+        list.removeChild(li);
+        input.focus();
+    });
+    
+    input.value = '';
     input.focus();
+    } else {
+        input.value = '';
+        input.focus();
+    }
 });
-
-input.value = '';
-
-input.focus();
