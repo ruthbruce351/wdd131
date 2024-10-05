@@ -63,36 +63,3 @@ section {
     background-color: #04AA6D;
     color: white;
 }
-
-nav {
-    background-color: darkslategray;
-    margin: 0 auto;
-    max-width: 800px;
-    border-radius: 5px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-.active {
-    background-color: gray;
-}
-
-nav a:hover {
-    background-color: black;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-}
-

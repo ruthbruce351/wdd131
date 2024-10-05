@@ -24,3 +24,37 @@
     }
     
     }
+
+    nav {
+        background-color: darkslategray;
+        margin: 0 auto;
+        max-width: 800px;
+        border-radius: 5px;
+    }
+    
+    .topnav {
+        list-style-type: none;
+    }
+    
+    .topnav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+    
+    .active {
+        background-color: gray;
+    }
+    
+    .topnav a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .topnav a {
+        display: flex;
+        justify-content: space-around;
+    }
+    
