@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Temple photo album">
+    <meta name="author" content="Ruth (Bruce) Blake">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts\temples.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <div class="topnav">
+            <a href="#home" class="active">Home</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#old">Old</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </header>
+    <main>
+        <h2>This should match the nav selection.</h2>
+        <section>
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+            <img class="temple" src="images/dallas-temple.jpg" alt="Dallas, Texas Temple">
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Ruth (Bruce) Blake | Texas, USA</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>  
+</body>
+</html>
