@@ -74,13 +74,13 @@ ul {
     }
 
     header, footer, h1 {
-        max-width: 1500px;
+        max-width: 2000px;
         width: 100%;
         
     }
 
     .hero {
-        max-width: 1500px; 
+        max-width: 2000px; 
         position: relative;
         width: 100%;
         height: auto; 
@@ -93,8 +93,8 @@ ul {
 
     .left {
         position: absolute;
-        top: 10rem;
-        left: 1rem;
+        top: 20%;
+        left: 5%;
         background-color: var(--text-color);
         padding: 1rem;
         border-radius: 5px;
@@ -103,8 +103,8 @@ ul {
 
     .right {
         position: absolute;
-        bottom: 7rem;
-        right: 1rem;
+        bottom: 20%;
+        right: 5%;
         background-color: var(--text-color);
         padding: 1rem;
         border-radius: 5px;
