@@ -10,14 +10,23 @@
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Finland</h1>
     </header>
     <main>
-        <img class="hero" src="images/helsinki.jpg" alt="Helsinki Finland">
-        <section>
+        <div>
+            <picture class="hero">
+                <source media="(min-width:960px)" srcset="images\helsinki-large.webp">
+                <source media="(min-width:500px)" srcset="images\helsinki-medium.webp">
+                <img src="images\helsinki-small.webp" alt="Helsinki">
+            </picture>
+        </div>
+        <section class="left">
             <h2>Data</h2>
             <ul>
                 <li><a>Area: Example</a></li>
@@ -26,9 +35,9 @@
                 <li><a>Languages: Finnish, Swedish</a></li>
             </ul> 
         </section>
-        <section>
-            <h2>Weather</h2>
-            <img class="icon" src="images/icon.jpg" alt="Weather Icon">
+        <section class="right">
+            <h2 class="weather-title">Weather</h2>
+            <img class="icon" src="images/icon.svg" alt="Weather Icon">
             <ul>
                 <li><a>Temperature: Example</a></li>
                 <li><a>Conditions: Example</a></li>
