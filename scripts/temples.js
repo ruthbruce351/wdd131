@@ -1,7 +1,10 @@
-let currentDate = new Date();
-let currentyear = currentDate.getFullYear();
+const currentYear = new Date().getFullYear();
+document.getElementById('currentyear').textContent = currentYear;
 
-let lastModified = new Date(document.lastModified);
+
+const lastModified = document.lastModified;
+document.getElementById('lastModified').textContent = lastModified;
+
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {

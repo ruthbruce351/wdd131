@@ -1,0 +1,34 @@
+@media screen and (max-width: 600px) {
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav .icon {
+        display: block;
+        margin-right: 100px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column; 
+        display: none; 
+        position: absolute; 
+        background-color: darkslategray; 
+        width: 100%; 
+        z-index: 1000; 
+    }
+
+    .topnav.active #myLinks {
+        display: flex;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
