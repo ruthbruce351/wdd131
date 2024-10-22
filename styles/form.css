@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    color: rgb(9, 9, 59);
+}
+
+form {
+    background-color: white;
+    padding: 50px;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(9, 9, 59);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(84, 84, 202);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
