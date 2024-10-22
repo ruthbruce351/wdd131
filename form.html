@@ -8,6 +8,7 @@
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -43,19 +44,20 @@
         <input type="date" id="installation-date" name="installation-date" required>
         
         <fieldset>
-            <legend>Useful Features:</legend>
+            <legend>Which features did you find useful in the product? (Select all the apply...):</legend>
             <label><input type="checkbox" name="features" value="Ease of Use">Ease of Use</label>
-            <label><input type="checkbox" name="features" value="Value for Cost">Value for Cost</label>
+            <label><input type="checkbox" name="features" value="Value for Cost">Performance</label>
             <label><input type="checkbox" name="features" value="Durability">Durability</label>
+            <label><input type="checkbox" name="features" value="Durability">Design</label>
         </fieldset>
         
-        <label for="review">Written Review:</label>
+        <label for="review">Written Review: (Optional)</label>
         <textarea id="review" name="review"></textarea>
         
-        <label for="name">Name:</label>
+        <label for="name">What is your name? (Optional)</label>
         <input type="text" id="name" name="name">
         
-        <input type="submit" value="Send Review">
+        <input type="submit" value="Post Review">
     </form>
 
     <footer>
