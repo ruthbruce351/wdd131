@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --charcoal: #464655ff;
+    --battleship-gray: #94958bff;
+    --french-gray: #b7b6c1ff;
+    --lavender-web: #d5cfe1ff;
+    --pale-purple: #eddfefff;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 2000px;
+    padding: 20px;
+    background-color: white;
+    color: var(--charcoal);
+}
+
+header {
+    width: 100%;
+    background-color: var(--charcoal);
+    padding: 1rem;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--charcoal);
+    padding: 1rem;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+nav {
+    margin-left: auto; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    color: white;
+    display: flex; 
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--battleship-gray); 
+}
+
+.topnav .icon {
+    display: none; 
+}
+
+main {
+    padding: 1rem;
+}
+
+.container {
+    display: flex; 
+    align-items: stretch; 
+    gap: 10px; 
+}
+
+.hero {
+    flex: 1; 
+    overflow: hidden; 
+}
+
+.hero img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+}
+
+.about-me {
+    border: solid 2px;
+    padding: 20px; 
+    text-align: center; 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    flex: 1; 
+}
+
+.about-me h2,
+.about-me h3 {
+    margin: 5px 0; 
+}
+
+.photonav {
+    background-color: var(--charcoal);
+    padding: 10px;
+    text-align: center;
+}
+
+.photonav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.photonav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.photonav a:hover {
+    background-color: var(--battleship-gray);
+}
+
+#photo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    grid-gap: 1rem; 
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.photo-card {
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.photo-card img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+
+.photo-card h3, .photo-card p {
+    margin:.5rem;
+}
+
+#blog-posts {
+    display: flex;
+    flex-direction: column; 
+    align-items: left; 
+    width: 100%;
+}
+
+.blog-post {
+    border: 1px solid var(--charcoal);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.blog-post h2 {
+    font-size: 1.5em;
+}
+
+.blog-post p {
+    color: var(--charcoal);
+}
+
+h1 {
+    padding: 5px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background: var(--charcoal);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--battleship-gray);
+}
+
+#myLinks {
+    display: none;
+}
+
+#myLinks.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .topnav #myLinks {
+        display: none; 
+    }
+
+    .topnav .icon {
+        display: block; 
+        margin-right: 20px; 
+        color: white;
+        cursor: pointer; 
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        display: none; 
+        background-color: var(--charcoal); 
+        width: 100%; 
+        z-index: 1000; 
+    }
+
+    .topnav.active #myLinks {
+        display: flex; 
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .about-me {
+        max-width: none; 
+    }
+}
